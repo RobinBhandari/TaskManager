@@ -25,7 +25,9 @@ namespace TaskManager.APITests {
 
                 response.EnsureSuccessStatusCode();
 
-               
+                Assert.Equal(Convert.ToInt32(System.Net.HttpStatusCode.Created), Convert.ToInt32(response.StatusCode));
+
+
 
 
             }

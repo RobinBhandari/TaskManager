@@ -12,10 +12,12 @@ namespace TaskManager.API.Controllers
     {
 
         [Route("")]
-        public object Post() {
-            return new {
-                Message = "hello world"
-            };
+        public object Post(Models.TaskItem newTask) {
+
+            // Save task to repository here
+            return this.Created<Models.TaskItem>("api/task/" + newTask.TaskID, newTask);
+
+
         }
 
 
