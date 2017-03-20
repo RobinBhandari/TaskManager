@@ -21,5 +21,13 @@ namespace TaskManager.API.Controllers
         }
 
 
+        [Route("{id}")]
+        public object Get(Guid id) {
+
+            return null;
+
+
+        }
+
     }
 }
