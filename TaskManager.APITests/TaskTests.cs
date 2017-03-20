@@ -52,6 +52,10 @@ namespace TaskManager.APITests {
                 var response = await serverAndClient.Client.GetAsync("api/task/" + newID);
                 response.EnsureSuccessStatusCode();
 
+                var content = await response.Content.ReadAsAsync<TaskItem>();
+
+                Assert.Equal(newID, content.TaskID);
+
             }
         }
      
