@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.html" />
+    <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
