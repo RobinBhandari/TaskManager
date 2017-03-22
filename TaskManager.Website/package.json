@@ -1,7 +1,12 @@
-﻿{
+{
   "version": "1.0.0",
   "name": "asp.net",
   "private": true,
+  "scripts": {
+  },
+  "dependencies": {
+  },
   "devDependencies": {
   }
+  
 }
