@@ -2,9 +2,16 @@
 
 describe('AppComponent', function () {
 
-    it('smoke test', function () {
-        // just testing that karma and jasmine are working
-        expect('1').toEqual('2');
+    var sut: AppComponent;
+
+    beforeEach(() => {
+        sut = new AppComponent();
+    });
+
+
+    it('should create', () => {
+        expect(sut instanceof AppComponent).toBe(true, 'should create AppComponent');
+
     });
 
 

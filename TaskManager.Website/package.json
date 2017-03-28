@@ -2,8 +2,11 @@
   "version": "1.0.0",
   "name": "asp.net",
   "private": true,
-  
+
   "scripts": {
+
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\""
+
   },
 
   "dependencies": {
@@ -27,7 +30,8 @@
   },
 
   "devDependencies": {
-
+    "concurrently": "3.4.0",
+    "typescript": "2.2.2",
     "jasmine-core": "~2.4.1",
     "karma": "^1.2.0",
     "karma-chrome-launcher": "^0.2.3",

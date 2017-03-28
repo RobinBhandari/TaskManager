@@ -2,8 +2,13 @@
 
 @Component({
     selector: 'main-app', 
-    template: 'hello angular'
+    template: '<h2>{{pageTitle}}</h2>'
 })
-export class AppComponent { }
+export class AppComponent {
+
+    pageTitle: string;
+
+
+}
 
 
