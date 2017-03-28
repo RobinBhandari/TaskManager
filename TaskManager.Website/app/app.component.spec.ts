@@ -14,6 +14,8 @@ describe('AppComponent', function () {
 
     });
 
-
+    it('should start with the correct title', () => {
+        expect(sut.pageTitle).toBe("Hello test");
+    });
 
 });

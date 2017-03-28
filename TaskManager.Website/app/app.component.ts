@@ -8,6 +8,9 @@ export class AppComponent {
 
     pageTitle: string;
 
+    constructor() {
+        this.pageTitle = "Hello test";
+    }
 
 }
 
