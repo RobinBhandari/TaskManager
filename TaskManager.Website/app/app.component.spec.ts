@@ -1,6 +1,6 @@
-﻿import { AppComponent } from './app.component'
+﻿import { AppComponent } from './app.component';
 
-describe('AppComponent', function () {
+describe('AppComponent', ()=> {
 
     var sut: AppComponent;
 
@@ -15,7 +15,7 @@ describe('AppComponent', function () {
     });
 
     it('should start with the correct title', () => {
-        expect(sut.pageTitle).toBe("Hello test");
+        expect(sut.pageTitle).toBe('Hello test');
     });
 
 });

@@ -1,7 +1,7 @@
-﻿import { Component } from '@angular/core'; 
+﻿import { Component } from '@angular/core';
 
 @Component({
-    selector: 'main-app', 
+    selector: 'main-app',
     template: '<h2>{{pageTitle}}</h2>'
 })
 export class AppComponent {
@@ -9,7 +9,7 @@ export class AppComponent {
     pageTitle: string;
 
     constructor() {
-        this.pageTitle = "Hello test";
+        this.pageTitle = 'Hello test';
     }
 
 }
